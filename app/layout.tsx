@@ -22,7 +22,7 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en" className="dark" style={{ colorScheme: "dark" }}>
         <Head>
-        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon-new.ico" />
         </Head>
         <body className={inter.className}>
         <Toaster richColors position="bottom-right" />
