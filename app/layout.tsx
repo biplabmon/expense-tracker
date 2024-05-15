@@ -4,6 +4,7 @@ import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import RootProviders from "@/components/providers/RootProviders";
 import { Toaster } from "@/components/ui/sonner";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,9 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en" className="dark" style={{ colorScheme: "dark" }}>
+        <Head>
+        <link rel="shortcut icon" href="/favicon.ico" />
+        </Head>
         <body className={inter.className}>
         <Toaster richColors position="bottom-right" />
           <RootProviders>{children}</RootProviders>
